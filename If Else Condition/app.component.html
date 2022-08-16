@@ -1,0 +1,11 @@
+<h1 class="heading">{{title}}</h1>
+<!-- <h2 *ngIf="show; then ifblock else elseblock">If Else Condition shown when it is true</h2> -->
+<h2 *ngIf="show; then ifblock else elseblock"></h2>
+
+<ng-template #ifblock>
+ <h2> If Condition</h2>
+</ng-template>
+
+<ng-template #elseblock>
+  <h2>This is Else BLock</h2>
+</ng-template>
