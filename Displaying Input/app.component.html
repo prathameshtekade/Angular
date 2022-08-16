@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<!-- <h2>{{name}}</h2>  -->
+<input type="text" #box placeholder="Enter Name" name="name">
+<button (click)="getValue(box.value)">Click to Display</button>
+<p>
+  Box value is:  {{displayVal}}
+</p>
