@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<form #basicForm="ngForm" (ngSubmit)="getuserdata(basicForm.value)">
+  <input type="text"   ngModel name="username" placeholder="Enter UserName" >
+  <br>
+  <input type="text" ngModel name="password" placeholder="Enter Password">
+  <br>
+  <button>Submit</button>
+</form>
+
+<h4>Name:{{userdata.username}}</h4>
+<h4>Password:{{userdata.password}}</h4>
